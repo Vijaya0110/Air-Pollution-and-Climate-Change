@@ -56,18 +56,21 @@ function showSlides(n) {
     <div class="mySlides fade">
       <center>
      	 <iframe width="768" height="432" src="https://www.youtube.com/embed/haBG2IIbwbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="text">Caption Text</div>
       </center>
     </div>
     
     <div class="mySlides fade">
       <center>
       	<iframe width="768" height="432" src="https://www.youtube.com/embed/aWqjqLFmQnA?rel=0" frameborder="0" allowfullscreen></iframe>
+        <div class="text">Caption Text 1</div>
       </center>
     </div>
     
     <div class="mySlides fade">
       <center>
       	<iframe width="768" height="432" src="https://www.youtube.com/embed/1rZDJrVcie4?rel=0" frameborder="0" allowfullscreen></iframe>
+        <div class="text">Caption Text 2</div>
       </center>
     </div>
   <!-- Next and previous buttons -->
@@ -83,41 +86,41 @@ function showSlides(n) {
   var slideIndex = 1;
   showSlides(slideIndex);
   </script>
-    <table class="table2" border="2px" align="center">
-      <tr>
-        <td class="td1" style="background-color: rgb(209, 166, 97); font-size:30px;">
-        <p><b> ABOUT</b></p>
-        </td>
-        <td class="td1" style="background-color: rgb(209, 166, 97); font-size: 30px;">
-          <p><b> Cause</b></p>
-        </td>
-        <td class="td1" style="background-color: rgb(209, 166, 97); font-size: 30px;">
-          <p><b> Health</b></p>
-        </td>
-      </tr>
-      <tr>
-        <td class="td1" style="background-color: rgb(230, 218, 57); ">
-          <img src="" href="#" >
-        </td>
-        <td class="td1" style="background-color: rgb(230, 218, 57);"> 
-          <img src="" href="#">
-        </td>
-        <td class="td1" style="background-color: rgb(230, 218, 57);">
-          <img src="" href="#">
-        </td>
-      </tr>
-      <tr>
-        <td class="td1" style="background-color: rgb(247, 239, 193);">
-          <p><b>air pollution, release into the atmosphere of various gases, finely divided solids, or finely dispersed liquid aerosols at rates that exceed the natural capacity of the environment to dissipate and dilute or absorb them. These substances may reach concentrations in the air that cause undesirable health, economic, or aesthetic effects.</b></p>
-        </td>
-        <td class="td1" style="background-color: rgb(247, 239, 193);">
-          <p><b>Air pollution is caused by solid and liquid particles and certain gases that are suspended in the air. These particles and gases can come from car and truck exhaust, factories, dust, pollen, mold spores, volcanoes and wildfires. The solid and liquid particles suspended in our air are called aerosols.
-          </b></p>
-        </td>
-        <td class="td1" style="background-color: rgb(247, 239, 193);">
-          <p><b>Air pollution is a familiar environmental health hazard. We know what we’re looking at when brown haze settles over a city, exhaust billows across a busy highway, or a plume rises from a smokestack. Some air pollution is not seen, but its pungent smell alerts you.</b></p>
-        </td>
-      </tr>
-    </table>
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'London')">London</button>
+  <button class="tablinks" onclick="openTab(event, 'Paris')">Paris</button>
+  <button class="tablinks" onclick="openTab(event, 'Tokyo')">Tokyo</button>
+</div>
+
+<div id="London" class="tabcontent">
+  <h3>London</h3>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<script>
+function openTab(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
 </body>
 <html>
