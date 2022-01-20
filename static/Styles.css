@@ -18,34 +18,34 @@
   animation: glowing 1500ms infinite;
 }
 @-webkit-keyframes glowing {
-  0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+  0% { background-color: #B28888; -webkit-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF8888; -webkit-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B28888; -webkit-box-shadow: 0 0 3px #B20000; }
 }
 
 @-moz-keyframes glowing {
-  0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+  0% { background-color: #B28888; -moz-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF8888; -moz-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B28888; -moz-box-shadow: 0 0 3px #B20000; }
 }
 
 @-o-keyframes glowing {
-  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  0% { background-color: #B28888; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF8888; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B28888; box-shadow: 0 0 3px #B20000; }
 }
 
 @keyframes glowing {
-  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  0% { background-color: #B28888; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF8888; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B28888; box-shadow: 0 0 3px #B20000; }
 }
-      .d1 {
+.d1 {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgb(154, 185, 214);
+  background-color: rgb(154, 185, 185);
 }
    
 .d2 {
