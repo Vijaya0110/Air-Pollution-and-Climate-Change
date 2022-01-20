@@ -49,21 +49,18 @@
   <div class="slideshow-container">
 
     <div class="mySlides fade">
-      <div class="numbertext">1 / 4</div>
       <center>
-     	 <iframe width="560" height="315" src="https://www.youtube.com/embed/haBG2IIbwbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     	 <iframe width="768" height="432" src="https://www.youtube.com/embed/haBG2IIbwbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </center>
     </div>
     
     <div class="mySlides fade">
-      <div class="numbertext">2 / 4</div>
       <center>
       	<iframe width="768" height="432" src="https://www.youtube.com/embed/aWqjqLFmQnA?rel=0" frameborder="0" allowfullscreen></iframe>
       </center>
     </div>
     
     <div class="mySlides fade">
-      <div class="numbertext">3 / 4</div>
       <center>
       	<iframe width="768" height="432" src="https://www.youtube.com/embed/1rZDJrVcie4?rel=0" frameborder="0" allowfullscreen></iframe>
       </center>
@@ -81,7 +78,6 @@
       <span class="dot" onclick="currentSlide(1)"></span> 
       <span class="dot" onclick="currentSlide(2)"></span> 
       <span class="dot" onclick="currentSlide(3)"></span> 
-      <span class="dot" onclick="currentSlide(4)"></span> 
     </div>
     
     <script>
@@ -102,7 +98,7 @@
       }
       slides[slideIndex-1].style.display = "block";  
       dots[slideIndex-1].className += " active";
-      setTimeout(showSlides, 2000); // Change image every 2 seconds
+      setTimeout(showSlides, 10000); // Change image every 2 seconds
     }
     </script>
     <table class="table2" border="2px" align="center">
