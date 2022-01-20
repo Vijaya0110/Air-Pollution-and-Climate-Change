@@ -89,7 +89,7 @@ function showSlides(n) {
   showSlides(slideIndex);
   </script>
 <div class="tab">
-  <button class="tablinks" onclick="openTab(event, 'London')">London</button>
+  <button class="tablinks" onclick="openTab(event, 'London')" id="defaultOpen">London</button>
   <button class="tablinks" onclick="openTab(event, 'Paris')">Paris</button>
   <button class="tablinks" onclick="openTab(event, 'Tokyo')">Tokyo</button>
 </div>
@@ -146,6 +146,10 @@ function openTab(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+  
+ // Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+  
   var coll = document.getElementsByClassName("collapsible");
 var i;
 
