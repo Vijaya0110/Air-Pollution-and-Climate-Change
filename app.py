@@ -24,16 +24,16 @@ def start():
     # Create data for the home page to pass the Maps key.
     data = { "map_key" : MAP_KEY }
     # Return the rendered HTML page
-    return render_template("pc.html", data = data)
+    return render_template("start.html", data = data)
 
 def get_color(aqi):
     # Convert the AQI value to a color.
-    if aqi <= 50: return "#009966"
-    if aqi <= 100: return "#ffde33"
-    if aqi <= 150: return "#ff9933"
-    if aqi <= 200: return "#cc0033"
-    if aqi <= 300: return "#660099"
-    return "#7e0023"
+    if aqi <= 50: return "blue"
+    if aqi <= 100: return "green"
+    if aqi <= 150: return "limegreen"
+    if aqi <= 200: return "yellow"
+    if aqi <= 300: return "orange"
+    return "red"
 
 def get_radius(aqi):
     # Convert the AQI value to a color.
@@ -41,8 +41,8 @@ def get_radius(aqi):
     if aqi <= 100: return 7
     if aqi <= 150: return 10
     if aqi <= 200: return 15
-    if aqi <= 300: return 20
-    return 25
+    if aqi <= 300: return 22
+    return 30
 
 def load_aqi_data(lon1, lat1, lon2, lat2):
     # Load the air quality data.
