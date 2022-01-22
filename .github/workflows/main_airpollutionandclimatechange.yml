@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'AirPollutionAndClimateChange'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CE83B6DDB706448C851FE251CEFC906B }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BBF860EA03BB499AA78F4B5BEA061CCB }}
